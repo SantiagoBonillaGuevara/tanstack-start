@@ -16,11 +16,42 @@ export function SiteHeader() {
           </div>
         </Link>
         <nav className="hidden gap-8 text-sm font-medium md:flex">
-          <Link to="/" activeOptions={{ exact: true }} activeProps={{ className: "text-accent" }} className="text-foreground/80 hover:text-primary transition-colors">Home</Link>
-          <Link to="/diagnosis" activeProps={{ className: "text-accent" }} className="text-foreground/80 hover:text-primary transition-colors">Diagnosis</Link>
-          <Link to="/framework" activeProps={{ className: "text-accent" }} className="text-foreground/80 hover:text-primary transition-colors">Framework</Link>
-          <Link to="/markets" activeProps={{ className: "text-accent" }} className="text-foreground/80 hover:text-primary transition-colors">Markets</Link>
-          <Link to="/solutions" activeProps={{ className: "text-accent" }} className="text-foreground/80 hover:text-primary transition-colors">Solutions</Link>
+          <Link
+            to="/"
+            activeOptions={{ exact: true }}
+            activeProps={{ className: "text-accent" }}
+            className="text-foreground/80 hover:text-primary transition-colors"
+          >
+            Home
+          </Link>
+          <Link
+            to="/diagnosis"
+            activeProps={{ className: "text-accent" }}
+            className="text-foreground/80 hover:text-primary transition-colors"
+          >
+            Diagnosis
+          </Link>
+          <Link
+            to="/framework"
+            activeProps={{ className: "text-accent" }}
+            className="text-foreground/80 hover:text-primary transition-colors"
+          >
+            Framework
+          </Link>
+          <Link
+            to="/markets"
+            activeProps={{ className: "text-accent" }}
+            className="text-foreground/80 hover:text-primary transition-colors"
+          >
+            Markets
+          </Link>
+          <Link
+            to="/solutions"
+            activeProps={{ className: "text-accent" }}
+            className="text-foreground/80 hover:text-primary transition-colors"
+          >
+            Solutions
+          </Link>
         </nav>
       </div>
     </header>
@@ -39,25 +70,57 @@ export function SiteFooter() {
           </p>
         </div>
         <div>
-          <div className="text-xs uppercase tracking-[0.2em] text-gold">Sections</div>
+          <div className="text-xs uppercase tracking-[0.2em] text-gold">
+            Sections
+          </div>
           <ul className="mt-3 space-y-2 text-sm text-cream">
-            <li><Link to="/diagnosis" className="hover:text-gold">Diagnosis & KPIs</Link></li>
-            <li><Link to="/framework" className="hover:text-gold">Selection Framework</Link></li>
-            <li><Link to="/markets" className="hover:text-gold">Market Comparison</Link></li>
-            <li><Link to="/solutions" className="hover:text-gold">Country Solutions</Link></li>
+            <li>
+              <Link to="/diagnosis" className="hover:text-gold">
+                Diagnosis & KPIs
+              </Link>
+            </li>
+            <li>
+              <Link to="/framework" className="hover:text-gold">
+                Selection Framework
+              </Link>
+            </li>
+            <li>
+              <Link to="/markets" className="hover:text-gold">
+                Market Comparison
+              </Link>
+            </li>
+            <li>
+              <Link to="/solutions" className="hover:text-gold">
+                Country Solutions
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
-          <div className="text-xs uppercase tracking-[0.2em] text-gold">2030 Promise</div>
+          <div className="text-xs uppercase tracking-[0.2em] text-gold">
+            2030 Promise
+          </div>
           <p className="mt-3 text-sm text-cream">
             "Shifting the brand from selling coffee to selling a premium
             cultural heritage." Doubling sales by 2030 with &gt;40% revenue from
             abroad.
           </p>
         </div>
+        <div>
+          <div className="text-xs uppercase tracking-[0.2em] text-gold">
+            Team
+          </div>
+          <ul className="mt-3 space-y-2 text-sm text-cream">
+            <li>Santiago Guevara</li>
+            <li>Santiago Pujol</li>
+            <li>Manuela Rubio</li>
+            <li>Nicolas Muñoz</li>
+          </ul>
+        </div>
       </div>
       <div className="border-t border-cream/20 py-5 text-center text-xs text-cream/80">
-        © {new Date().getFullYear()} Juan Valdez IBCC Strategic Brief — All content for academic purposes.
+        © {new Date().getFullYear()} Juan Valdez IBCC Strategic Brief — All
+        content for academic purposes.
       </div>
     </footer>
   );
